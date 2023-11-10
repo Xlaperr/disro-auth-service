@@ -1,6 +1,6 @@
 package com.service.disroauthservice.command;
 
-import com.service.disroauthservice.event.CreateUserEvent;
+import com.service.disroauthservice.core.events.CreateUserEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;

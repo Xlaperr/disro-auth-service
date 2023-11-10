@@ -1,4 +1,4 @@
-package com.service.disroauthservice.event;
+package com.service.disroauthservice.core.events;
 
 import lombok.Data;
 
