@@ -2,8 +2,11 @@ package com.service.disroauthservice.core.data;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<UserEntity, String> {
-    UserEntity findByUserId(String userId);
+import java.util.List;
 
-    UserEntity findByUserName(String username);
+public interface UserRepository extends JpaRepository<UserEntity, String> {
+    UserEntity findByUserName(String userName);
+
+    UserEntity findByEmail(String email);
+
 }
