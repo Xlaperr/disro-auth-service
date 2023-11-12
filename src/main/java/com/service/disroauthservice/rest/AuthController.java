@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping("/auth-service")
+@RequestMapping("/")
 public class AuthController {
 
     private final CommandGateway commandGateway;
@@ -27,7 +27,7 @@ public class AuthController {
     }
 
     @GetMapping("/users")
-    public List<UserEntity> getuser(){
+    public List<UserEntity> getuser() {
         return userRepository.findAll();
     }
 
